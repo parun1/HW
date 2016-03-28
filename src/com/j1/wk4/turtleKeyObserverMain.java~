@@ -1,0 +1,35 @@
+package com.j1.wk4;
+
+import java.awt.event.KeyAdapter;
+import java.awt.KeyAdapter;
+class turtleListener extends Turlte {
+  public TurlteListener() {
+    addKeyListener(new KeyAdapter() {
+      public void keyPressed(KeyEvent e){
+      int keyCode=e.getKeyCode();
+    switch(keyCOde) {
+      case KeyEvent.VK_UP;
+      setSatatusText("forward 20");
+      forward(20);
+      break;
+    case KeyEvent.VK_DOWN;
+      setStatusTect("back 20");
+      bakc(20);
+      break;
+    case KeyEvent.VK_Q;
+       setStatusText("q pessed and exiting");
+       break;
+    }
+      }
+       );
+  }
+}
+
+
+public calss TurlteKeyObserverMain {
+  public static void main(String[] args) {
+    TurtleKeyListener t=new TurtleKeyListener();
+    t.addStatusBar(20);
+    t.setStatusText("Press ant key");
+  }
+}
